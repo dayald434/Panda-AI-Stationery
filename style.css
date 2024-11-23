@@ -1,0 +1,304 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fffbf0, #d4f1f9); /* Soft yellow to baby blue */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Add playful background pattern */
+body::before {
+  content: '';
+  background: url('https://www.transparenttextures.com/patterns/small-criss-cross.png') repeat; /* Subtle criss-cross pattern */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ff9ff3; /* Bright pink */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222f5b !important; /* Navy blue */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.nav-link {
+  color: #151313 !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link:hover {
+  color: #ff6f61 !important; /* Coral */
+  transform: scale(1.2) rotate(5deg);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section Styling */
+.intro-text h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 4rem;
+  color: #222f5b; /* Navy */
+  text-shadow: 3px 3px #ff9ff3; /* Bright pink shadow */
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.6rem;
+  color: #5d6477;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #54a0ff, #5f27cd); /* Vibrant blue to purple */
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #5f27cd, #54a0ff);
+  transform: scale(1.2) rotate(-5deg);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature Section */
+.feature {
+  text-align: center;
+  background: #f8f9fa; /* Soft off-white */
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 2px dashed #ff9ff3; /* Dashed border */
+}
+
+.feature:hover {
+  transform: translateY(-15px) rotate(-2deg);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.feature-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #ff9ff3, #feca57); /* Pink and yellow gradient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  max-width: 40px;
+  transition: transform 0.3s;
+}
+
+.feature img:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.feature h3 {
+  font-size: 2rem;
+  color: #222f5b;
+  margin-top: 15px;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.feature a {
+  color: #54a0ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.feature a:hover {
+  color: #ff9ff3;
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #feca57; /* Bright yellow */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer h5 {
+  color: #222f5b; /* Navy */
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: #54a0ff; /* Vibrant blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #ff9ff3;
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.feature-icon:hover {
+  animation: wiggle 0.6s infinite ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .feature {
+    padding: 25px;
+  }
+}
+/* Base Styling */
+.navbar {
+    background-color: #ffd670;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .brand-logo {
+    width: 30px; /* Adjust to your preferred size */
+    height: auto;
+    margin-right: 10px;
+    animation: bounce 2s infinite ease-in-out, rotate 2s infinite ease-in-out; /* Animations */
+  }
+  
+  .brand-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #2a2a72;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out, textGlow 2s infinite alternate; /* Text animations */
+  }
+  
+  /* Animations for the Panda Image */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotate {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  /* Animations for the Text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textGlow {
+    0% {
+      text-shadow: 0 0 5px #ffd670, 0 0 10px #ffd670;
+    }
+    100% {
+      text-shadow: 0 0 20px #ffd670, 0 0 30px #ffd670;
+    }
+  }
+  
+  /* Hover Effect for Navbar */
+  .navbar-brand:hover .brand-logo {
+    transform: scale(1.1);
+  }
+  
+  .navbar-brand:hover .brand-text {
+    color: #f77f00;
+  }
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: cursive;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0); /* Starting position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to starting position */
+    }
+  }
+  
+  .brand-title img, .brand-title .brand-text {
+    display: inline-block; /* Makes the elements behave like inline-blocks for animation */
+    animation: moveUpDown 1.5s ease-in-out infinite; /* Apply animation */
+  }
+  
+  
